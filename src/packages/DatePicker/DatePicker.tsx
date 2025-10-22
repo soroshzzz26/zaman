@@ -15,7 +15,8 @@ export const DatePicker = (props: DatePickerProps) => {
     locale = 'fa',
     weekends = [],
     direction = 'rtl',
-    accentColor
+    accentColor,
+    placeholder = ''
   } = props
   useMemo(() => localeCache.setLocale(locale), [locale])
   // refs
@@ -93,6 +94,7 @@ export const DatePicker = (props: DatePickerProps) => {
         {...props?.inputAttributes}
         onClick={toggleShowCalendar}
         type="text"
+        placeholder={placeholder}
         value={getInputValue}
         className={props.inputClass !== null ? props.inputClass : ''}
         readOnly
