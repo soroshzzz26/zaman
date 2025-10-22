@@ -14,7 +14,7 @@
     "watch": "rollup -c rollup.config.js -w",
     "lint:fix": "eslint --fix src",
     "format": "prettier src --write",
-    "prepare": "husky install"
+    "prepare": "npm install --include=dev && npm run build"
   },
   "repository": {
     "type": "git",
