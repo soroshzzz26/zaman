@@ -19,6 +19,7 @@ export interface DatePickerBaseProps extends BaseProps {
   inputAttributes?: InputHTMLAttributes<HTMLInputElement>
   position?: Positions
   customShowDateFormat?: string
+  placeholder?: string;
 }
 
 export type DatePickerProps = DatePickerBaseProps &
