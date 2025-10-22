@@ -14,7 +14,7 @@
     "watch": "rollup -c rollup.config.js -w",
     "lint:fix": "eslint --fix src",
     "format": "prettier src --write",
-    "prepare": "npm install --include=dev && npm run build"
+    "prepare": "npm install && npm run build"
   },
   "repository": {
     "type": "git",
